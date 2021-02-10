@@ -2,6 +2,8 @@
 Front end web project developed with HTML and CSS.
 Vint logo designed with Photoshop
 
+<img alt="Licencia Creative Commons" style="border-width:0" src="https://i.ibb.co/MCn9yYq/Vint.png" />
+
 --------------------------------
 ## Author
 * [Emiliano Kalafatic](https://github.com/ekalafatic)
