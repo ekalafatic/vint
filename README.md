@@ -1,6 +1,8 @@
 # Vint 
 Front end web project developed with HTML and CSS.
+
 Vint logo designed with Photoshop
+
 Link: https://emikalafatic.000webhostapp.com/
 
 <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.ibb.co/MCn9yYq/Vint.png" />
