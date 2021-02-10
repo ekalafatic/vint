@@ -1,0 +1,286 @@
+/**{
+	padding: 10px;
+	margin:10px;
+	border: 2px solid red;
+}*/
+
+body{
+    font-family: 'Allerta', sans-serif;
+	margin:0;
+}
+
+html, body {
+	/* height: 100%; */
+	margin: 0;
+	height:100%;
+  }
+
+/**** TABLA DE PRECIOS ****/
+table{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+th{
+	background: #865e47;
+	color: white;
+}
+
+th{
+	padding: 10px 20px;
+	text-align: left;
+
+}
+
+table, td, th{
+	/* 273b47 */
+	border: 2px solid #865e47;
+	border-collapse: collapse;
+}
+
+table{
+	margin-bottom: 50px;
+}
+
+td{
+	padding: 20px;
+	color: white;
+}
+
+.contenedor{
+	width: 850px;
+	margin: auto;
+}
+
+.button{
+	border-radius: 12px;
+	border: none;
+	background: #fd324e;
+	color: white;
+	padding: 7px 12px;
+	font-size: 18px;
+	background: linear-gradient(to left, #a15a31, #e68147);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.titulo{
+	font-size: 70px; /* nos lo brinda el archivo sketch o psd */
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+    margin-top: 65px;
+}
+
+.titulo span{
+	text-decoration: underline;
+}
+
+.title-a{
+	font-size: 24px;
+	margin-top: 0;
+}
+
+.title-b{
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.products{
+	color: #242323;
+	margin-bottom: 70px;
+}
+
+.products h2{	/* para no afectar a todos los h2 si no a sólo el de products */
+	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.product{
+	margin: 10px;
+	padding: 10px;
+/*	overflow: hidden;	oculta el desborde del modelo de caja
+*/	border: 1px solid #242323;
+	border-radius: 8px;
+}
+
+.product.b{
+	height: 200px;
+	padding-bottom: 15px;
+}
+
+.portada{
+	background: url(../images/background.png);
+	background-size: cover;
+	color: white;
+	padding: 15px;
+	height: 430px;
+	padding-bottom: 35px;
+}
+
+.portada button{
+	margin-bottom: 70px;
+}
+
+.portada2{
+	/* background: url(../images/background.png); */
+	background-size: cover;
+	color: white;
+	padding: 20px;
+	height: 150px;
+}
+
+.main{
+	background: url(../images/background.png);
+	/* background-position: center;
+	background-repeat: no-repeat; */
+	background-size: cover;
+	height: 100%;
+	
+}
+
+.menu{
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;	/*se posiciona tantos pixels desde el borde de la caja (se puso a header como relative)*/
+	right: 0px;
+}
+
+.menu li{
+	display: inline-block;	/*para que sea en línea Y en bloque*/
+	margin-left: 30px;
+	margin-top: 23px;
+}
+
+.menu li:before{
+	content: '·';
+	font-size: 30px;
+	line-height: 20px;
+	color: white;
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
+}
+
+.logotipo{
+	display: inline-block;
+	margin-left: 0px;
+}
+
+.product ol{
+	padding: 0px;	/*le saca el padding porque en el diseño están los elementos más a la izquierda que el título*/
+}
+
+.derecha{
+	float: right;
+	position: relative;	/*se desplaza según lo que le indiquemos*/
+	top: -127px;	/*notar que es lo mismo que poner bottom: 127px;*/
+}
+
+/* Imagen izquierda */
+.izquierda{
+	float: left;
+	position: relative;
+	padding-left: 15px;
+}
+
+.footer .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.footerPrice .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor-product-a{
+	padding-left: 25px;
+	position: relative;
+	bottom: 20px;
+}
+
+.contenedor-product-b{
+	margin-left: 400px;
+	position: relative;
+	bottom: 75px;
+}
+
+.header{
+	position: relative;	/*para que el menú sea absoluto respecto al header*/
+}
+
+.footer{
+	/* background: #472b1e; */
+	background: url(../images/background_footer.png);
+	/* background-repeat: repeat-x; */
+	background-size: cover;
+	padding-top: 20px;
+}
+
+
+.contacto{
+	display: flex;
+	width: 400px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contacto img{
+	display: block;
+	margin-top: 15px;
+}
+
+.contacto strong{
+	display: block;
+}
+
+.contacto a{
+	color: white;
+	text-decoration: none;
+	/*display: flex;
+	flex-direction: column;*/
+	margin: 10px 10px 10px 0px;
+}
+
+.telmail{
+	display: flex;
+	flex-direction: row;
+}
+
+.formulario{
+	display: flex;
+	width: 400px;
+	color: white;
+	padding: 30px 6px;
+}
+
+.col1, .col2{	/* con esto se logra más que nada distribuir los campos, los botones luego para que no ocupen todo el ancho usar align-items */
+	display: flex;
+	flex-direction: column;
+}
+
+.col1{
+	margin-right: 20px;
+}
+
+.col2{
+	align-items: flex-start;
+}
+
+.intereses label{
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses{
+	margin-bottom: 6px;
+}
+
+.sexo{
+	margin-top: 6px;
+}
+

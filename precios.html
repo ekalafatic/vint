@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Prices</title> <!-- título principal, el que va en la pestaña del navegador -->
+		<meta charset="utf-8"> <!-- soporta tildes del español -->
+		<link rel="stylesheet" type="text/css" href="css/vint.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet"> 
+	</head>
+	<body>
+		<section id="main" class="main">
+			<section id="portada2" class="portada2">	<!-- portada -->
+				<header id="header" class="header contenedor"> 
+					<figure class="logotipo">	<!-- logotipo -->
+						<img src="images/vint.png" width="220" height="103" alt="Vint logotipo">
+					</figure>
+	
+					<nav class="menu">	<!-- menu -->
+						<ul>	<!-- unordante list -->
+							<li>	<!-- list item (elemento de la lista) -->
+								<a href="index.html">Home</a>		
+							</li>
+							<li>	
+								<a href="index.html#products">Products</a>
+							</li>
+							<li>	
+								<a href="precios.html">Prices</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</section>
+			<section class="tabla">
+				<div class="contenedor">
+					<table>
+						<thead>	<!-- cabecera de tabla -->
+							<tr>	<!-- table row -->
+								<th>Model</th>	<!-- table head -->
+								<th>Price</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Typewriter</td>	<!-- table division, el contenido de cada columna básicamente-->
+								<td>U$D 1250</td>
+								<td>Metal typewriter</td>
+							</tr>
+							<tr>
+								<td>Vintage Phone</td>
+								<td>U$D 500</td>
+								<td>Gold-plated and wood vintage phone</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<footer class="footerPrice">
+				<div class="contenedor">
+					<div class="contacto">
+						<img src="images/vint_white.png" width="220" height="103" alt="logotipo blanco">
+						<div class="telmail">
+							<a href="tel:+543425201558"><strong>Teléfono</strong> <span>+543425201558</span></a>	<!-- strong y span es para diferenciar el título del tel -->
+							<a href="mailto:emiliano.kalafatic@gmail.com"><strong>E-mail</strong><span>emiliano.kalafatic@gmail.com</span></a>
+						</div>
+					</div>
+					<div>
+						<form  class="formulario">
+							<div class="col1">
+								<label for="nombre">Name</label>
+								<input type="text" required id="nombre" name="nombre">
+								<label for="email">E-mail</label>
+								<input type="email" required id="email" name="email">
+								<div class="sexo">
+									<label for="mujer">
+										<input type="radio" checked id="mujer" name="sexo" value="mujer"> woman	
+									</label>
+									<label for="hombre">
+										<input type="radio" id="hombre" name="sexo" value="hombre"> man	
+									</label>
+								</div>
+								<div class="intereses">
+									<label class="cotizacion">							
+										<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Quotation
+									</label>
+									<br>
+									<label class="reclamos">							
+										<input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Claims
+									</label>
+									<br>
+									<label class="comentarios">							
+										<input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comments
+									</label>
+									<br>
+									<label class="otros">							
+										<input type="checkbox" id="otros" name="intereses" value="Otros"> Others
+									</label>
+								</div>
+							</div>
+							<div class="col2">
+								<label for="comentarios"> Comments
+									<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+								</label>
+								<input type="submit" value="Send" class="button">
+							</div>
+						</form>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</body>
+</html>

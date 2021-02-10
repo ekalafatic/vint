@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Vint-age</title> <!-- título principal, el que va en la pestaña del navegador -->
+		<meta charset="utf-8"> <!-- soporta tildes del español -->
+		<!-- <style type="text/css">
+			body{
+				background: blue;
+			}
+		</style> -->
+		<link rel="stylesheet" type="text/css" href="css/vint.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet"> 
+	</head>
+	
+	<body>
+		
+		<section id="portada" class="portada">	<!-- portada -->
+			<header id="header" class="header contenedor"> 
+				<figure class="logotipo">	<!-- logotipo -->
+					<img src="images/vint.png" width="220" height="103" alt="Vint logotipo">
+				</figure>
+
+				<nav class="menu">	<!-- menu -->
+					<ul>	<!-- unordante list -->
+						<li>	<!-- list item (elemento de la lista) -->
+							<a href="index.html">Home</a>		<!-- enlaces -->
+						</li>
+						<li>	
+							<a href="#products">Products</a>		<!-- enlaces -->
+						</li>
+						<li>
+							<a href="precios.html">Prices</a>		<!-- enlaces -->
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="contenedor">
+				<h1 class="titulo"> <span>Vint</span>age products  </h1>	<!-- titulo, se utiliza sólo una vez por página y sirve para SEO -->
+				<h3 class="title-a">Live the feeling of being in another era</h3>	<!-- resumen -->
+				<a class="button" href="#products" >Know more</a><!-- botón -->
+			</div>
+		</section>
+
+		<section id="products" class="products contenedor">	<!-- products -->
+			<h2>Our products</h2>	<!-- titulo -->
+			<article class="product">
+				<img class="derecha" src="images/typewriter.png" alt="Typewriter" width="350">		<!-- no es necesario colocar w y h si no vamos a modificar su tamaño. Si sólo colocamos uno de los dos, el otro se calcula solo -->
+				<div class="contenedor-product-a">
+					<h3 class="title-b">Typewriter</h3>
+					<ol>
+						<li>High durability</li>
+						<li>Metal materials</li>
+						<li>Includes ink and vintage paper</li>
+					</ol>
+				</div>
+			</article>	<!-- product1 (artículo) engloba descripciones o entradas grandes como una entrada de blog-->
+			
+			<article class="product b">	<!-- product2 -->
+				<img class="izquierda" src="images/vintage_phone.png" alt="Vintage Phone" width="300">
+				<div class="contenedor-product-b">
+					<h3 class="title-b">Vintage Phone</h3>
+					<ol>
+						<li>Vintage bell</li>
+						<li>Gold-plated metal and wood materials</li>
+						<li>Circular keyboard</li>
+					</ol>
+				</div>
+			</article>
+		</section>
+		<footer class="footer">
+			<div class="contenedor">
+				<div class="contacto">
+					<img src="images/vint_white.png" width="220" height="103" alt="logotipo blanco">
+					<div class="telmail">
+						<a href="tel:+543425201558"><strong>Teléfono</strong> <span>+543425201558</span></a>	<!-- strong y span es para diferenciar el título del tel -->
+						<a href="mailto:emiliano.kalafatic@gmail.com"><strong>E-mail</strong><span>emiliano.kalafatic@gmail.com</span></a>
+					</div>
+				</div>
+				<div>
+					<form  class="formulario">
+						<div class="col1">
+							<label for="nombre">Name</label>
+							<input type="text" required id="nombre" name="nombre">
+							<label for="email">E-mail</label>
+							<input type="email" required id="email" name="email">
+							<!-- <div class="sexo">
+								<label for="mujer">
+									<input type="radio" checked id="mujer" name="sexo" value="mujer"> female	
+								</label>
+								<label for="hombre">
+									<input type="radio" id="hombre" name="sexo" value="hombre"> male	
+								</label>
+							</div> -->
+							<div class="intereses">
+								<label class="cotizacion">							
+									<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Quotation
+								</label>
+								<br>
+								<label class="reclamos">							
+									<input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Claims
+								</label>
+								<br>
+								<label class="comentarios">							
+									<input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comments
+								</label>
+								<br>
+								<label class="otros">							
+									<input type="checkbox" id="otros" name="intereses" value="Otros"> Others
+								</label>
+							</div>
+						</div>
+						<div class="col2">
+							<label for="comentarios"> Comments
+								<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+							</label>
+							<input type="submit" value="Send" class="button">
+						</div>
+					</form>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
