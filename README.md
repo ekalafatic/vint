@@ -1,5 +1,5 @@
 # Vint 
-Front end web project developed with HTML, CSS and JavaScript.
+Front end web project developed with HTML, CSS, and JavaScript.
 
 Vint logo designed with Photoshop
 
