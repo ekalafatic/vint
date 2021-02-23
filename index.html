@@ -76,6 +76,8 @@
 						<a href="mailto:emiliano.kalafatic@gmail.com"><strong>E-mail</strong><span>emiliano.kalafatic@gmail.com</span></a>
 					</div>
 				</div>
+				<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+				<script src="js/formulario.js"></script>
 				<div>
 					<form  class="formulario">
 						<div class="col1">
@@ -101,7 +103,7 @@
 								</label>
 								<br>
 								<label class="comentarios">							
-									<input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comments
+									<input type="checkbox" id="comentario" name="intereses" value="comentarios"> Comment
 								</label>
 								<br>
 								<label class="otros">							
@@ -113,7 +115,7 @@
 							<label for="comentarios"> Comments
 								<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
 							</label>
-							<input type="submit" value="Send" class="button">
+							<input type="button" value="Send" onclick="send()" class="button">
 						</div>
 					</form>
 				</div>
